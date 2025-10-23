@@ -1,0 +1,23 @@
+spring:
+    application:
+        name: redis-cache
+
+    datasource:
+        url: jdbc:mysql://localhost:3306/redis_cache
+        username: root
+        password: sum93917
+
+    jpa:
+        hibernate:
+            ddl-auto: update
+        show-sql: true
+
+    cache:
+        type: redis
+
+    data:
+        redis:
+            host: localhost
+            port: 6379
+            password: 
+            ssl-enable: false
